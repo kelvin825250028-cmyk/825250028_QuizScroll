@@ -1,0 +1,22 @@
+/* scroll.css - Styling tombol Scroll to Top & Scroll to Bottom */
+
+/* Posisi tetap di pojok kanan bawah layar, meskipun halaman di-scroll */
+.scrollAtasBawah {
+    position: fixed; bottom: 20px; right: 20px;
+    z-index: 1000; display: flex; flex-direction: column; gap: 4px;
+}
+
+.tombol-scroll {
+    width: 45px; height: 45px;
+    background-color: #333333; color: #ffffff;
+    border: none; border-radius: 50%; font-size: 18px;
+    cursor: pointer; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex; align-items: center; justify-content: center;
+}
+
+/* Efek hover */
+.tombol-scroll:hover {
+    background-color: #ff0000 !important;
+    color: #ffffff; transform: scale(1.1);
+}
